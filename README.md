@@ -2,8 +2,6 @@
   <h1>Next Countries</h1>
 </div>
 
-[![GitHub](https://img.shields.io/badge/GitHub-View%20on%20GitHub-blue?logo=github)](https://github.com/rironib/next-countries)
-
 A performance-first library providing data for 248 countries, optimized for Next.js App Router and React Server Components. Zero dependencies, built-in TypeScript support, and extremely lightweight.
 
 ## Install
