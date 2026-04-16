@@ -1,0 +1,39 @@
+{
+  "name": "next-countries",
+  "version": "1.0.1",
+  "description": "Simple country list optimized for Next.js App Router and React Server Components.",
+  "keywords": [
+    "countries",
+    "nextjs",
+    "app-router",
+    "iso-3166",
+    "react-server-components"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rironib/next-countries.git"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup index.ts --format cjs,esm --dts --clean --minify",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  },
+  "license": "MIT"
+}
